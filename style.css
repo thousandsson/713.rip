@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------
-   你的周末不属于学校
+   713.rip
    token: 纸 / 墨 / 灰 / 线 / 印红
-   type : 标题与引文用宋(印刷文件)，正文用黑体(屏幕阅读)
+   type : 标题与引文用宋体(印刷品)，正文用黑体(屏幕阅读)
    ------------------------------------------------------------------ */
 
 :root {
@@ -30,7 +30,6 @@ body {
   font-family: var(--sans);
   font-size: 17px;
   line-height: 1.85;
-  font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
 }
 
@@ -40,7 +39,7 @@ body {
   padding: 0 1.5rem 5rem;
 }
 
-/* ---------- 链接：像印刷品的下划线，hover 才变红 ---------- */
+/* ---------- 链接 ---------- */
 
 a {
   color: inherit;
@@ -55,7 +54,6 @@ a:hover { color: var(--seal); text-decoration-color: var(--seal); }
 :focus-visible {
   outline: 2px solid var(--seal);
   outline-offset: 3px;
-  border-radius: 0;
 }
 
 /* ---------- hero ---------- */
@@ -85,15 +83,12 @@ h1 .rip { color: var(--seal); }
   font-size: 1.02rem;
   line-height: 2;
   color: #333330;
-  margin: 0 0 1.6rem;
+  margin: 0;
   max-width: 34rem;
 }
 .lede b { font-weight: 600; }
 
-.jump { margin: 0; font-size: .95rem; }
-.jump a { text-decoration-color: var(--ink); }
-
-/* ---------- 先对一下表 ---------- */
+/* ---------- 全国通用标准 ---------- */
 
 .clock {
   margin: 0 0 4.5rem;
@@ -145,24 +140,16 @@ h1 .rip { color: var(--seal); }
   color: var(--seal);
   font-size: 1.42rem;
   font-weight: 700;
-  letter-spacing: .01em;
 }
 
 .clock .src {
   color: var(--faint);
   font-size: .82rem;
-  line-height: 1.8;
+  line-height: 1.9;
   margin: 1rem 0 .75rem;
 }
-
-.origin {
-  font-family: var(--serif);
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 2rem 0 .35rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--rule);
-}
+.clock .src b { color: var(--muted); font-weight: 600; }
+.clock .src sup { font-size: .9em; }
 
 .ask {
   font-family: var(--serif);
@@ -183,7 +170,6 @@ h1 .rip { color: var(--seal); }
   font-family: var(--serif);
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: .01em;
   margin: 0 0 .5rem;
 }
 
@@ -195,6 +181,7 @@ h1 .rip { color: var(--seal); }
   margin: 0 0 2.75rem;
   padding-left: 1.1rem;
   border-left: 3px solid var(--rule);
+  scroll-margin-top: 1rem;
 }
 
 .cite h3 {
@@ -208,18 +195,16 @@ h1 .rip { color: var(--seal); }
 .cite .meta {
   color: var(--faint);
   font-size: .82rem;
-  letter-spacing: .02em;
   margin: 0 0 1rem;
 }
 
 .cite blockquote {
   font-family: var(--serif);
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 2.05;
   color: #242422;
   margin: 0 0 1rem;
   padding: 0;
-  text-indent: 0;
 }
 
 .cite .note {
@@ -237,12 +222,146 @@ h1 .rip { color: var(--seal); }
   margin: 0;
 }
 
+/* ---------- 已公示学校 ---------- */
+
+.schools { margin: 0; }
+
+.empty {
+  padding: 2rem 1.4rem;
+  border: 1px dashed var(--rule);
+  color: #3f3f3b;
+}
+.empty p { margin: 0 0 .8rem; font-size: .95rem; }
+.empty p:last-child { margin-bottom: 0; }
+
+details.school {
+  border-top: 1px solid var(--rule);
+  padding: 0;
+}
+details.school:first-of-type { border-top: 2px solid var(--ink); }
+
+details.school > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.1rem 2rem 1.1rem 0;
+  position: relative;
+}
+details.school > summary::-webkit-details-marker { display: none; }
+
+details.school > summary::after {
+  content: "＋";
+  position: absolute;
+  right: 0;
+  top: 1.15rem;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--faint);
+}
+details.school[open] > summary::after { content: "－"; }
+
+.school-name {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.school-brief {
+  display: block;
+  font-size: .94rem;
+  color: #3f3f3b;
+  line-height: 1.85;
+  margin-top: .2rem;
+}
+
+.school-meta {
+  display: block;
+  color: var(--faint);
+  font-size: .82rem;
+  line-height: 1.75;
+  margin-top: .35rem;
+}
+
+.school-body {
+  padding: 0 0 1.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+details.school:last-of-type .school-body { border-bottom: 0; }
+
+.school-body h4 {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 1.5rem 0 .5rem;
+  letter-spacing: .04em;
+}
+.school-body h4:first-child { margin-top: 0; }
+
+.school-body .rows dd { font-size: .97rem; }
+.school-body .rows dd b { font-size: 1.12rem; }
+
+ul.violations { margin: 0; padding: 0; list-style: none; }
+ul.violations li {
+  font-family: var(--serif);
+  font-size: .98rem;
+  line-height: 1.8;
+  margin-bottom: .4rem;
+}
+ul.violations li::before {
+  content: "";
+  display: inline-block;
+  width: .7em;
+  height: 1px;
+  background: var(--seal);
+  vertical-align: .35em;
+  margin-right: .55em;
+}
+.law-name {
+  color: var(--seal);
+  text-decoration-color: rgba(163, 42, 38, .35);
+}
+a.law-name:hover { color: #7d1f1c; }
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: .7rem;
+}
+.shot { margin: 0; }
+.shot img {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--rule);
+  cursor: zoom-in;
+}
+.shot figcaption {
+  font-size: .78rem;
+  color: var(--faint);
+  line-height: 1.6;
+  margin-top: .3rem;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 18, 18, .93);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 99;
+  cursor: zoom-out;
+}
+.lightbox.on { display: flex; }
+.lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
 /* ---------- 举报渠道 ---------- */
 
 .channels {
   list-style: none;
   counter-reset: ch;
-  margin: 0 0 3.5rem;
+  margin: 0 0 2.5rem;
   padding: 0;
 }
 
@@ -265,7 +384,6 @@ h1 .rip { color: var(--seal); }
   font-family: var(--serif);
   font-size: .95rem;
   font-weight: 700;
-  color: var(--ink);
   border: 1.5px solid var(--ink);
 }
 
@@ -276,30 +394,63 @@ h1 .rip { color: var(--seal); }
   margin: 0 0 .45rem;
 }
 
-.channels p { margin: 0 0 .5rem; font-size: .95rem; line-height: 1.95; }
+.channels p { margin: 0; font-size: .95rem; line-height: 1.95; }
+.channels p b { font-weight: 600; }
 
-.lines { display: flex; flex-wrap: wrap; gap: .3rem 1.5rem; }
-.lines span { font-size: .95rem; }
+/* ---------- 南充专区 ---------- */
 
-.sub2 {
-  font-size: .86rem !important;
-  color: var(--muted);
-  margin: 0 0 .5rem !important;
+details.zone {
+  border: 1px solid var(--rule);
+  margin: 0 0 2.5rem;
 }
+details.zone > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: .95rem 1.1rem;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 700;
+  position: relative;
+  background: #f7f7f5;
+}
+details.zone > summary::-webkit-details-marker { display: none; }
+details.zone > summary::after {
+  content: "＋";
+  position: absolute;
+  right: 1.1rem;
+  color: var(--faint);
+}
+details.zone[open] > summary::after { content: "－"; }
+
+.zone-body {
+  padding: 1.25rem 1.1rem .5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.zone-body h4 {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 1.4rem 0 .5rem;
+  letter-spacing: .04em;
+}
+.zone-body h4:first-child { margin-top: 0; }
+
+.lines { display: flex; flex-wrap: wrap; gap: .3rem 1.5rem; margin: 0 0 .5rem; }
+.lines span { font-size: .95rem; }
 
 .districts {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: .35rem 0;
-  margin: 0;
+  margin: 0 0 .5rem;
   padding: 0;
   font-size: .93rem;
 }
-.districts li {
-  flex: 0 0 33.333%;
-  min-width: 8.5rem;
-}
+.districts li { flex: 0 0 33.333%; min-width: 8.5rem; }
+
+.zone-body > p { font-size: .93rem; line-height: 1.9; margin: 0 0 .8rem; }
 
 .tel, .mail {
   font-family: var(--serif);
@@ -339,10 +490,7 @@ h1 .rip { color: var(--seal); }
 
 /* ---------- 提交证据 ---------- */
 
-.mailrow {
-  font-size: 1rem;
-  margin: 0 0 1.5rem;
-}
+.mailrow { font-size: 1rem; margin: 0 0 1.5rem; }
 
 .tmpl {
   font-family: var(--sans);
@@ -358,55 +506,9 @@ h1 .rip { color: var(--seal); }
   word-break: break-word;
 }
 
-/* ---------- 已公示学校 ---------- */
-
-.schools { margin: 0; }
-
-.empty {
-  padding: 2rem 1.4rem;
-  border: 1px dashed var(--rule);
-  color: #3f3f3b;
-}
-.empty p { margin: 0 0 .8rem; font-size: .95rem; }
-.empty p:last-child { margin-bottom: 0; }
-
-.school {
-  padding: 0 0 1.75rem;
-  margin: 0 0 1.75rem;
-  border-bottom: 1px solid var(--rule);
-}
-.school:last-child { border-bottom: 0; margin-bottom: 0; }
-
-.school h3 {
-  font-family: var(--serif);
-  font-size: 1.16rem;
-  font-weight: 700;
-  margin: 0 0 .25rem;
-}
-.school .where {
-  color: var(--faint);
-  font-size: .84rem;
-  margin: 0 0 1.1rem;
-}
-.school .sect { margin-bottom: 1rem; }
-.school .sect:last-child { margin-bottom: 0; }
-.school h4 {
-  font-size: .82rem;
-  font-weight: 600;
-  color: var(--muted);
-  margin: 0 0 .35rem;
-  letter-spacing: .04em;
-}
-.school ul { margin: 0; padding-left: 1.25rem; }
-.school li { font-size: .94rem; line-height: 1.9; margin-bottom: .2rem; }
-.school .sect p { margin: 0; font-size: .94rem; line-height: 1.9; }
-
 /* ---------- 说明 ---------- */
 
-.notes ul {
-  margin: 0 0 2.5rem;
-  padding-left: 1.25rem;
-}
+.notes ul { margin: 0 0 2.5rem; padding-left: 1.25rem; }
 .notes li {
   font-size: .89rem;
   line-height: 1.95;
@@ -452,6 +554,8 @@ h1 .rip { color: var(--seal); }
   .districts li { flex: 0 0 50%; }
   .channels > li { padding-left: 2.3rem; }
   .block { margin-bottom: 3.5rem; }
+  .shots { grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr)); }
+  .school-body .rows dd b { font-size: 1.06rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

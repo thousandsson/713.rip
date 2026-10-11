@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>713.rip — 一周 7 天，平均每天 13 小时在学校</title>
-<meta name="description" content="一周 7 天，平均每天 13 小时在学校。占用休息日补课、强制自习的规定原文，能真正受理的举报渠道，以及有证据支撑的学校名单。">
+<meta name="description" content="公示占用休息日组织集体补课、强制返校自习的学校，附作息、对照的规定与材料来源。全国通用的规定原文与举报渠道。">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,116 +14,126 @@
   <header class="hero">
     <h1>713<span class="rip">.rip</span></h1>
     <p class="tagline">你的周末不属于学校</p>
-    <p class="lede">一周 <b>7</b> 天，平均每天 <b>13</b> 小时在学校。这里收录占用休息日补课与强制自习的<b>规定原文</b>、能真正受理的<b>举报渠道</b>，以及有证据支撑的<b>学校名单</b>。每一条规定都附公开链接，可以自己点开核对。</p>
-    <p class="jump"><a href="#report">直接看举报渠道 ↓</a></p>
+    <p class="lede">一周 <b>7</b> 天，平均每天 <b>13</b> 小时在学校。但真正赖不掉的不是这个数——是<b>休息日组织集体补课、强制返校自习</b>。这一条全国通用，谁都绕不过去。</p>
   </header>
 
+  <!-- ============ 全国通用标准 ============ -->
   <section class="clock">
-    <h2>先对一下表</h2>
-    <p class="sub">以下数字全部出自公开文件，不是我们的主张。</p>
+    <h2>全国通用的几条</h2>
+    <p class="sub">从国务院和教育部那一级来的，全国各地都适用。各地还有更细的规定（比如晚自习几点下课），见每所学校条目里引用的当地文件。</p>
     <dl class="rows">
-      <div class="row"><dt>上午第一节课</dt><dd>不早于 <b>8:00</b></dd></div>
-      <div class="row"><dt>下午第一节课</dt><dd>不早于 <b>14:00</b></dd></div>
-      <div class="row"><dt>高中走读生晚自习结束</dt><dd>不晚于 <b>21:30</b></dd></div>
-      <div class="row"><dt>高中寄宿生晚自习结束</dt><dd>不晚于 <b>22:00</b></dd></div>
-      <div class="row"><dt>每日在校集中学习</dt><dd>不超过 <b>8</b> 小时</dd></div>
+      <div class="row"><dt>中学上午第一节课</dt><dd>不早于 <b>8:00</b></dd></div>
       <div class="row"><dt>高中生就寝</dt><dd>不晚于 <b>23:00</b></dd></div>
+      <div class="row"><dt>高中生每日睡眠</dt><dd>不少于 <b>8</b> 小时</dd></div>
+      <div class="row"><dt>每日学习时间（含自习）</dt><dd>不超过 <b>8</b> 小时</dd></div>
+      <div class="row"><dt>法定节假日、休息日、寒暑假</dt><dd>不得组织集体补课<sup>※</sup></dd></div>
     </dl>
-    <p class="src">南充市教育和体育局《关于严格落实中小学生作息时间要求的通知》，2023 年 11 月。</p>
-
-    <h3 class="origin">713 是怎么来的</h3>
-    <dl class="rows">
-      <div class="row"><dt>上午到校，开始早读</dt><dd><b>7:30</b></dd></div>
-      <div class="row"><dt>晚自习结束</dt><dd><b>22:00</b></dd></div>
-      <div class="row"><dt>一周在校时长</dt><dd><b>90</b> 小时</dd></div>
-      <div class="row"><dt>平均每天在校</dt><dd><b>13</b> 小时</dd></div>
-    </dl>
-    <p class="src">这是一所普通高中的作息，也是这个页面的起点。上表写着走读生晚自习结束不晚于 21:30，这里是 22:00。</p>
+    <p class="src">依次出自：教育部办公厅教基厅函〔2021〕11 号；《学校卫生工作条例》第五条；《未成年人保护法》第三十三条。<br><sup>※</sup> 这一款原文限定为“义务教育阶段”，高中不直接适用；高中休息日补课主要依据各地规范办学文件，见下方各校条目所引。而《未成年人保护法》第三十三条<b>第一款</b>（保障休息、娱乐和体育锻炼时间）无此限定，适用所有未成年学生。</p>
     <p class="ask">你学校的作息表，对得上吗？</p>
   </section>
 
-  <section id="law" class="block">
-    <h2>一、能用得上的规定</h2>
-    <p class="sub">从全国性法规到本地文件，按效力从高到低排。高中不属于义务教育阶段，这一点后面会单独说明。</p>
+  <!-- ============ 一、公示 ============ -->
+  <section id="list" class="block">
+    <h2>一、已公示的学校</h2>
+    <p class="sub">只收有材料的。每一条都写清作息、对照的规定和材料来源，点开看详情。若某条与事实不符，欢迎随时来信，核对后更正或撤下。</p>
+    <div id="schools" class="schools"></div>
+  </section>
 
-    <article class="cite">
+  <!-- ============ 二、规定原文 ============ -->
+  <section id="law" class="block">
+    <h2>二、能用得上的规定</h2>
+    <p class="sub">按效力从高到低。每一条都附官方链接，可以自己点开核对。</p>
+
+    <article class="cite" id="law-health">
       <h3>《学校卫生工作条例》第五条</h3>
       <p class="meta">国务院批准 · 国家教委令第 10 号 · 1990 年</p>
       <blockquote>学校应当合理安排学生的学习时间。学生每日学习时间（包括自习），小学不超过六小时，中学不超过八小时，大学不超过十小时。<br>学校或者教师不得以任何理由和方式，增加授课时间和作业量，加重学生学习负担。</blockquote>
-      <p class="note">“中学”包含普通高中。“每日学习时间包括自习”——也就是说，周末与假期的集中上课、强制自习，同样要算进这八小时里。这条到今天没有被废止。</p>
-      <p class="src">现行有效性请在 <a href="https://flk.npc.gov.cn/" target="_blank" rel="noopener">国家法律法规数据库</a> 检索《学校卫生工作条例》核对。</p>
+      <p class="note">“中学”包含普通高中。“每日学习时间包括自习”——周末与假期的集中上课、强制自习，同样要算进这八小时里。这条到今天没有被废止。</p>
+      <p class="src">现行有效性可在 <a href="https://flk.npc.gov.cn/" target="_blank" rel="noopener">国家法律法规数据库</a> 检索核对。</p>
     </article>
 
-    <article class="cite">
+    <article class="cite" id="law-minor">
       <h3>《中华人民共和国未成年人保护法》第三十三条</h3>
       <p class="meta">2020 年修订 · 2021 年 6 月 1 日施行</p>
       <blockquote>学校应当与未成年学生的父母或者其他监护人互相配合，合理安排未成年学生的学习时间，保障其休息、娱乐和体育锻炼的时间。<br>学校不得占用国家法定节假日、休息日及寒暑假期，组织义务教育阶段的未成年学生集体补课，加重其学习负担。</blockquote>
-      <p class="note">注意第二款里的限定词——“<b>义务教育阶段</b>”。高中生不在这一款的直接保护范围内，用这条去举报高中会被驳。但第一款没有限定，适用于所有未成年学生，包括高中生：学校有义务“合理安排学习时间、保障休息时间”。针对高中，主要抓下面几条。</p>
+      <p class="note">注意第二款里的“<b>义务教育阶段</b>”五个字——高中生不在这一款的直接保护范围内，用它举报高中会被驳。但第一款没有这个限定，适用于所有未成年学生：学校有义务合理安排时间、保障休息。高中主要抓下面两条。</p>
       <p class="src"><a href="https://flk.npc.gov.cn/" target="_blank" rel="noopener">国家法律法规数据库</a> 可查全文。</p>
     </article>
 
-    <article class="cite">
+    <article class="cite" id="law-sleep">
       <h3>教育部办公厅《关于进一步加强中小学生睡眠管理工作的通知》</h3>
-      <p class="meta">教基厅函〔2021〕11 号</p>
+      <p class="meta">教基厅函〔2021〕11 号 · 全国性</p>
       <blockquote>小学生每天睡眠时间应达到 10 小时，初中生应达到 9 小时，高中生应达到 8 小时。<br>小学上午上课时间一般不早于 8:20，中学一般不早于 8:00；学校不得要求学生提前到校参加统一的教育教学活动。<br>小学生就寝时间一般不晚于 21:20；初中生一般不晚于 22:00；高中生一般不晚于 23:00。</blockquote>
-      <p class="note">这是全国性文件，直接写了“高中生”。如果学校要求你 7:50 前到校参加统一早读、早自习，与“不得要求学生提前到校参加统一的教育教学活动”相抵触。</p>
+      <p class="note">这份文件直接写了“高中生”。要求 7:30 前到校参加统一早读，与“不得要求学生提前到校参加统一的教育教学活动”相抵触；22:00 以后放学，睡眠很难达到 8 小时。</p>
       <p class="src"><a href="https://www.gov.cn/zhengce/zhengceku/2021-04/02/content_5597443.htm" target="_blank" rel="noopener">中国政府网 · 原文</a></p>
     </article>
 
-    <article class="cite">
-      <h3>南充市教育和体育局《关于严格落实中小学生作息时间要求的通知》</h3>
-      <p class="meta">2023 年 11 月 · 本地上级主管部门文件</p>
-      <blockquote>中学上午第一节课行课时间一般不早于 8:00；下午第一节课行课时间一般不早于 14:00。学校不得要求学生提前到校参加统一的教育教学活动。<br>小学、初中、普通高中学生每天在校集中学习（不含课外活动）时间分别不超过 6 小时、7 小时、8 小时。<br>高中走读生晚自习结束时间原则上不晚于 21:30；寄宿制学生晚自习结束时间不晚于 22:00。<br>高中生就寝时间一般不晚于 23:00。严禁占用学生午休时间讲授新课、集体补课、集中答疑、布置作业或组织考试等。</blockquote>
-      <p class="note">这是对本地学校最直接、最具体的一份文件——它把“高中”“走读/寄宿”“晚自习”“午休”都写清楚了，举报时引用它，对方无法用“规定不明确”推脱。</p>
-      <p class="src"><a href="https://www.nanchong.gov.cn/jyhtyj/xwdt/tzgg/202311/t20231109_1896080.html" target="_blank" rel="noopener">南充市教育和体育局 · 原文</a>（文末即附市局举报电话）</p>
+    <article class="cite" id="law-nc-time">
+      <h3>南充市《关于严格落实中小学生作息时间要求的通知》</h3>
+      <p class="meta">南充市教育和体育局 · 2023 年 11 月 · 地方文件</p>
+      <blockquote>中学上午第一节课行课时间一般不早于 8:00；下午第一节课行课时间一般不早于 14:00。学校不得要求学生提前到校参加统一的教育教学活动。<br>普通高中学生每天在校集中学习（不含课外活动）时间不超过 8 小时。<br>高中走读生晚自习结束时间原则上不晚于 21:30；寄宿制学生晚自习结束时间不晚于 22:00。<br>高中生就寝时间一般不晚于 23:00。严禁占用学生午休时间讲授新课、集体补课、集中答疑、布置作业或组织考试等。</blockquote>
+      <p class="note">地方文件，只对南充市有效，但比上位法规具体得多——它把“高中”“走读 / 寄宿”“晚自习”都点明了，举报时引用它，对方无法用“规定不明确”推脱。别的地方用不了的，去找当地的同类文件。</p>
+      <p class="src"><a href="https://www.nanchong.gov.cn/jyhtyj/xwdt/tzgg/202311/t20231109_1896080.html" target="_blank" rel="noopener">南充市教育和体育局 · 原文</a>（文末附市局举报电话）</p>
     </article>
 
-    <article class="cite">
-      <h3>南充市教育和体育局《家长、学生减负“十条措施”》</h3>
-      <p class="meta">2024 年 12 月</p>
+    <article class="cite" id="law-nc-ten">
+      <h3>南充市《家长、学生减负“十条措施”》</h3>
+      <p class="meta">南充市教育和体育局 · 2024 年 12 月 · 地方文件</p>
       <blockquote>五、严控学生在校时长。科学安排上学、放学时间，不得要求学生提前到校，不得延迟放学。<br>八、保障学生睡眠时间。规范校外培训，严控作业总量，严禁节假日违规补课，家校联动督促学生按时就寝。</blockquote>
       <p class="note">“严禁节假日违规补课”是白纸黑字的一句。星期六上课、星期日强制返校自习，属于它管的范围。</p>
       <p class="src"><a href="https://www.nanchong.gov.cn/jyhtyj/xwdt/jtdt/202412/t20241211_2050918.html" target="_blank" rel="noopener">南充市教育和体育局 · 原文</a></p>
     </article>
 
-    <article class="cite">
+    <article class="cite" id="law-gaozhong">
       <h3>国务院办公厅《关于新时代推进普通高中育人方式改革的指导意见》</h3>
-      <p class="meta">国办发〔2019〕29 号</p>
+      <p class="meta">国办发〔2019〕29 号 · 全国性</p>
       <blockquote>严格执行教学计划，严禁超课标教学、抢赶教学进度和提前结束课程，严禁组织有偿补课，切实减轻学生过重课业负担。</blockquote>
-      <p class="note">这一条没有直接提“节假日补课”，别引错。它的用处是：当学校以提高成绩为名压缩课程进度、加课时时，可以搬出这一句。文件是针对普通高中的，身份上对得上。</p>
+      <p class="note">这份文件里<b>没有</b>“严禁占用节假日补课”这句话，别引错。它的用处是：当学校以赶进度为名加课时，可以搬出这一句。文件针对的就是普通高中，身份对得上。</p>
       <p class="src"><a href="https://www.gov.cn/zhengce/zhengceku/2019-06/19/content_5401568.htm" target="_blank" rel="noopener">中国政府网 · 原文</a></p>
     </article>
   </section>
 
+  <!-- ============ 三、举报 ============ -->
   <section id="report" class="block">
-    <h2>二、往哪举报</h2>
-    <p class="sub">按“最可能真正受理”的顺序排。建议从第一条开始，同时留痕。</p>
+    <h2>三、往哪举报</h2>
+    <p class="sub">下面四个是全国都能用的。地方上的电话和文件收在「南充专区」里，别的地方请找当地的同类渠道。</p>
 
     <ol class="channels">
       <li>
         <h3>12345 政务服务便民热线</h3>
-        <p>手机直接拨 <a class="tel" href="tel:12345">12345</a>。接通后说明是教育工作投诉，会转到属地教育行政部门。它的工单有办理时限和回访考核，比单打一个电话更容易被跟到底。务必记下工单号。</p>
+        <p>手机直接拨 <a class="tel" href="tel:12345">12345</a>。说明是教育工作投诉，会转到属地教育行政部门。工单有办理时限和回访考核，比单打一个电话更容易被跟到底。<b>务必记下工单号。</b></p>
       </li>
       <li>
-        <h3>南充市教育和体育局</h3>
+        <h3>人民网「领导留言板」</h3>
+        <p><a href="http://liuyan.people.com.cn/" target="_blank" rel="noopener">liuyan.people.com.cn</a>，可以直接给省委书记、市委书记、市长留言，留言和回复都是公开的。适合放长篇陈述、贴证据；因为公开，对方处理起来会更谨慎。</p>
+      </li>
+      <li>
+        <h3>国务院「互联网＋督查」平台</h3>
+        <p><a href="https://tousu.www.gov.cn/dc/index.htm" target="_blank" rel="noopener">tousu.www.gov.cn/dc/index.htm</a>，微信里搜「国务院客户端」小程序也能进。官方承诺对“反映强烈、带普遍性的重要问题线索”直接派员督查。注意：它会转办地方，不是绕过地方，但会留下国家层面的记录。</p>
+      </li>
+      <li>
+        <h3>国家信访局</h3>
+        <p><a href="https://www.gjxfj.gov.cn" target="_blank" rel="noopener">www.gjxfj.gov.cn</a>。可以网上写信，能留文字证据。</p>
+      </li>
+    </ol>
+
+    <details class="zone">
+      <summary>南充专区 · 本地电话与文件</summary>
+      <div class="zone-body">
+        <h4>南充市教育和体育局</h4>
         <p class="lines">
           <span>举报电话 <a class="tel" href="tel:08172396613">0817-2396613</a></span>
           <span><a class="tel" href="tel:08172810012">0817-2810012</a></span>
           <span>师德师风专线 <a class="tel" href="tel:08172810030">0817-2810030</a></span>
         </p>
-        <p class="src">号码出自市局作息通知与省厅规范办学平台公示。</p>
-      </li>
-      <li>
-        <h3>四川省教育厅 规范办学行为举报平台</h3>
+
+        <h4>四川省教育厅 规范办学行为举报平台（南充）</h4>
         <p class="lines">
           <span><a class="tel" href="tel:08172810012">0817-2810012</a></span>
           <span><a href="mailto:327894145@qq.com">327894145@qq.com</a></span>
         </p>
-        <p class="src">与市局号码交叉核对一致。省级渠道适合在属地处理不满意后使用。</p>
-      </li>
-      <li>
-        <h3>所属区（县）教科体局</h3>
-        <p class="sub2">南充各县市区：</p>
+
+        <h4>各区（县）教科体局</h4>
         <ul class="districts">
           <li>顺庆 <a class="tel" href="tel:08172292703">2292703</a></li>
           <li>高坪 <a class="tel" href="tel:08173339559">3339559</a></li>
@@ -135,61 +145,56 @@
           <li>营山 <a class="tel" href="tel:08178213857">8213857</a></li>
           <li>蓬安 <a class="tel" href="tel:08178621679">8621679</a></li>
         </ul>
-      </li>
-      <li>
-        <h3>国务院“互联网＋督查”平台</h3>
-        <p><a href="https://tousu.www.gov.cn/dc/index.htm" target="_blank" rel="noopener">tousu.www.gov.cn/dc/index.htm</a>，微信里搜“国务院客户端”小程序也能进。官方承诺对“反映强烈、带普遍性的重要问题线索”直接派员督查。注意：它会转办地方，不是绕过地方，但会留下国家层面的记录。</p>
-      </li>
-      <li>
-        <h3>国家信访局</h3>
-        <p><a href="https://www.gjxfj.gov.cn" target="_blank" rel="noopener">www.gjxfj.gov.cn</a>。可以网上写信，能留文字证据。</p>
-      </li>
-    </ol>
+
+        <h4>本地文件</h4>
+        <p><a href="https://www.nanchong.gov.cn/jyhtyj/xwdt/tzgg/202311/t20231109_1896080.html" target="_blank" rel="noopener">《关于严格落实中小学生作息时间要求的通知》</a>（2023 年 11 月）<br>
+        <a href="https://www.nanchong.gov.cn/jyhtyj/xwdt/jtdt/202412/t20241211_2050918.html" target="_blank" rel="noopener">《家长、学生减负“十条措施”》</a>（2024 年 12 月）</p>
+
+        <p class="src">号码出自市局作息通知与省厅规范办学平台公示。</p>
+      </div>
+    </details>
 
     <div class="script">
       <h3>打电话时怎么说</h3>
       <p>照这个顺序说，对方不好打断，也不容易糊弄过去：</p>
       <ol class="say">
         <li>“我是 ×× 中学学生的家长（或本人），要反映一个违规办学的问题。”</li>
-        <li>“该校在 × 月 × 日（星期 ×），组织学生 ××（几点到几点）集体上课／强制自习。”</li>
-        <li>“这违反了南充市教育和体育局 2023 年《关于严格落实中小学生作息时间要求的通知》里‘×条’的规定，也违反了教育部教基厅函〔2021〕11 号。”</li>
+        <li>“该校在 × 月 × 日（星期 ×），组织学生 ××（几点到几点）集体上课／强制返校自习。”</li>
+        <li>“这违反了 ×× 文件第 × 条的规定。”（把规定名称和条款号说全）</li>
         <li>“请登记受理，并告知我办理时限和工单号。”</li>
       </ol>
       <p class="tip">三个要点：报<b>日期和时段</b>（越具体越难推脱）、引<b>文件名和条款</b>（对方知道你不是随口发火）、要<b>工单号和时限</b>（这一条决定了它会不会被认真走完流程）。</p>
     </div>
   </section>
 
+  <!-- ============ 四、提交 ============ -->
   <section id="submit" class="block">
-    <h2>三、把证据发过来</h2>
-    <p class="sub">这里只公布有材料支撑的学校。没有证据，不点名——不点学校名，是不想让任何一个名字冤枉。</p>
+    <h2>四、把证据发过来</h2>
+    <p class="sub">这里只公示有材料支撑的学校。没有证据不点名——不点学校名，是不想让任何一个名字冤枉。</p>
 
     <p class="mailrow">收件邮箱 <a class="mail" href="mailto:thethousandsson@proton.me">thethousandsson@proton.me</a></p>
     <p>邮件按下面格式写，能省很多来回：</p>
 
     <pre class="tmpl">1. 学校全名与所在地（区／县）：
 2. 违规事实（日期、时段、具体安排，越具体越好）：
-3. 证据（截图／照片／课表／考勤，可自行打码个人信息）：
+3. 证据（照片／截图／课表／考勤，可自行打码个人信息）：
 4. 是否同意公开（同意／仅作核实，不公开）：
 5. 联系方式（可不填，仅用于核实材料）：
 
 声明：以上信息由本人提供，我愿意对其真实性负责。</pre>
 
-    <p class="src">收到后做什么：核对材料与所引规定，能对上的才会列入下方名单；材料不足的会回信问，不会直接挂上去。你的身份信息不会出现在任何地方。</p>
+    <p class="src">照片最有用的是能看出「什么时候、什么场合、在干什么」——比如晚自习时间教室坐满人、周末的黑板板书、班级群里的通知截图。人脸的、能认出是谁的，我们不做处理直接打码。<br>收到后：核对材料与所引规定，能对上的才列入名单；材料不足的会回信问，不会直接挂上去。你的身份信息不会出现在任何地方。</p>
   </section>
 
-  <section id="list" class="block">
-    <h2>四、已公示的学校</h2>
-    <p class="sub">每条都能追到具体事实与所违反的规定。若某条有误，欢迎随时来信指出，我们会核对后更正或撤下。</p>
-    <div id="schools" class="schools" aria-live="polite"></div>
-  </section>
-
+  <!-- ============ 说明 ============ -->
   <section class="block notes">
     <h2>说明</h2>
     <ul>
-      <li>本页内容均来自公开发布的法律法规与教育行政部门文件，并附原文链接；相关条款的现行有效性，以国家法律法规数据库和发文机关的最新版本为准。</li>
-      <li>“已公示的学校”一栏的条目，依据来信者提供的材料整理。任何学校或个人如认为内容与事实不符，可通过上方的邮箱提出，我们会核对后更正或撤下。</li>
+      <li>本页内容均来自公开发布的法律法规与教育行政部门文件，并附原文链接；条款现行有效性以国家法律法规数据库和发文机关的最新版本为准。</li>
+      <li>“已公示的学校”一栏的条目，依据来信者提供的材料整理，措辞采用“据来信者提供的材料”。任何学校或个人如认为内容与事实不符，可通过上方邮箱提出，我们核对后更正或撤下。</li>
       <li>本页只做信息整理与公开，不构成法律意见。具体维权请以现行有效的法律法规和主管部门的口径为准。</li>
       <li>不收集、不显示任何提交者的身份信息。</li>
+      <li>条目中「对照」一栏只列相关规定名称，本站不作“违规”认定，供读者自行比对。</li>
       <li>名字的来历：「713」是一周 7 天、平均每天 13 小时在校，「rip」是墓碑。</li>
     </ul>
     <p class="stamp">证据为准</p>
@@ -201,44 +206,81 @@
 
 </main>
 
+<div id="lightbox" class="lightbox"><img alt="" /></div>
+
 <script src="data.js"></script>
 <script>
 (function () {
   var host = document.getElementById('schools');
   var list = (window.SCHOOLS || []);
 
-  if (!list.length) {
-    host.innerHTML =
-      '<div class="empty">' +
-      '<p><strong>暂时还没有条目。</strong></p>' +
-      '<p>不是因为没有这种事，而是因为这里只收有证据的。一份班级群通知截图、一张课表、一条考勤记录，就够开始。</p>' +
-      '<p><a href="#submit">怎么提交 →</a></p>' +
-      '</div>';
-  } else {
-    list.forEach(function (s) {
-      var el = document.createElement('article');
-      el.className = 'school';
-      var facts = (s.facts || []).map(function (f) { return '<li>' + esc(f) + '</li>'; }).join('');
-      var basis = (s.basis || []).map(function (b) { return '<li>' + esc(b) + '</li>'; }).join('');
-      el.innerHTML =
-        '<h3>' + esc(s.name) + '</h3>' +
-        '<p class="where">' + esc(s.region || '') + (s.added ? ' · 收录于 ' + esc(s.added) : '') + '</p>' +
-        (facts ? '<div class="sect"><h4>违规事实</h4><ul>' + facts + '</ul></div>' : '') +
-        (basis ? '<div class="sect"><h4>所依据的规定</h4><ul>' + basis + '</ul></div>' : '') +
-        (s.evidence ? '<div class="sect"><h4>证据</h4><p>' + esc(s.evidence) + '</p></div>' : '');
-      host.appendChild(el);
-    });
-  }
-
   function esc(t) {
-    return String(t).replace(/[&<>"]/g, function (c) {
+    return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
     });
   }
 
-  var d = new Date();
-  document.getElementById('updated').textContent =
-    d.getFullYear() + ' 年 ' + (d.getMonth() + 1) + ' 月 ' + d.getDate() + ' 日';
+  if (!list.length) {
+    host.innerHTML =
+      '<div class="empty">' +
+      '<p><strong>暂时还没有条目。</strong></p>' +
+      '<p>不是因为没有这种事，而是因为这里只收有证据的。一份班级群通知的截图、一张课表、一张晚自习的教室照片，就够开始。</p>' +
+      '<p><a href="#submit">怎么提交 →</a></p>' +
+      '</div>';
+  } else {
+    list.forEach(function (s, i) {
+      var el = document.createElement('details');
+      el.className = 'school';
+
+      var sched = (s.schedule || []).map(function (r) {
+        return '<div class="row"><dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd></div>';
+      }).join('');
+
+      var viol = (s.violations || []).map(function (v) {
+        var href = v.link ? ' href="' + esc(v.link) + '"' : '';
+        var tag = v.link ? 'a' : 'span';
+        return '<li><' + tag + ' class="law-name"' + href + '>' + esc(v.name || v) + '</' + tag + '></li>';
+      }).join('');
+
+      var shots = (s.images || []).map(function (im) {
+        var src = typeof im === 'string' ? im : im.src;
+        var cap = typeof im === 'string' ? '' : (im.caption || '');
+        return '<figure class="shot"><img src="' + esc(src) + '" alt="' + esc(cap) + '" loading="lazy">' +
+               (cap ? '<figcaption>' + esc(cap) + '</figcaption>' : '') + '</figure>';
+      }).join('');
+
+      el.innerHTML =
+        '<summary>' +
+          '<span class="school-name">' + esc(s.name) + '</span>' +
+          '<span class="school-brief">' + esc(s.brief || '') + '</span>' +
+          '<span class="school-meta">' + esc(s.region || '') + (s.address ? ' · ' + esc(s.address) : '') + (s.added ? ' · 收录于 ' + esc(s.added) : '') + '</span>' +
+        '</summary>' +
+        '<div class="school-body">' +
+          (sched ? '<h4>作息</h4><dl class="rows">' + sched + '</dl>' : '') +
+          (viol ? '<h4>对照</h4><ul class="violations">' + viol + '</ul>' : '') +
+          (shots ? '<h4>证据</h4><div class="shots">' + shots + '</div>' : '') +
+          (s.evidence ? '<p class="src">材料：' + esc(s.evidence) + '</p>' : '') +
+        '</div>';
+
+      host.appendChild(el);
+    });
+  }
+
+  // 点图放大
+  var lb = document.getElementById('lightbox');
+  document.addEventListener('click', function (e) {
+    var img = e.target.closest && e.target.closest('.shot img');
+    if (img) {
+      lb.querySelector('img').src = img.src;
+      lb.classList.add('on');
+      return;
+    }
+    if (e.target === lb || e.target.closest('.lightbox')) lb.classList.remove('on');
+  });
+
+  var t = new Date();
+  var d = document.getElementById('updated');
+  if (d) d.textContent = t.getFullYear() + ' 年 ' + (t.getMonth() + 1) + ' 月 ' + t.getDate() + ' 日';
 })();
 </script>
 
