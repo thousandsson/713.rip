@@ -1,5 +1,6 @@
 /* ------------------------------------------------------------------
    713.rip
+   version: v1.1.0  ·  2026-10-11  （改动记录见 CHANGELOG.md）
    token: 纸 / 墨 / 灰 / 线 / 印红
    type : 标题与引文用宋体(印刷品)，正文用黑体(屏幕阅读)
    ------------------------------------------------------------------ */
@@ -178,25 +179,50 @@ h1 .rip { color: var(--seal); }
 /* ---------- 规定引文 ---------- */
 
 .cite {
-  margin: 0 0 2.75rem;
-  padding-left: 1.1rem;
-  border-left: 3px solid var(--rule);
+  margin: 0 0 1.05rem;
+  border: 1px solid var(--rule);
   scroll-margin-top: 1rem;
 }
 
-.cite h3 {
+.cite > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: .9rem 2.6rem .9rem 1.1rem;
+  position: relative;
+}
+.cite > summary::-webkit-details-marker { display: none; }
+.cite > summary::after {
+  content: "＋";
+  position: absolute;
+  right: 1.1rem;
+  top: .95rem;
+  color: var(--faint);
+}
+.cite[open] > summary::after { content: "－"; }
+.cite[open] > summary {
+  background: #f7f7f5;
+  border-bottom: 1px solid var(--rule);
+}
+.cite > summary:hover .cite-title { color: var(--seal); }
+
+.cite-title {
+  display: block;
   font-family: var(--serif);
-  font-size: 1.12rem;
+  font-size: 1.06rem;
   font-weight: 700;
   line-height: 1.6;
-  margin: 0 0 .3rem;
+  transition: color .12s;
 }
 
-.cite .meta {
+.cite-meta {
+  display: block;
   color: var(--faint);
-  font-size: .82rem;
-  margin: 0 0 1rem;
+  font-size: .8rem;
+  line-height: 1.6;
+  margin-top: .2rem;
 }
+
+.cite-body { padding: 1.2rem 1.1rem .85rem; }
 
 .cite blockquote {
   font-family: var(--serif);

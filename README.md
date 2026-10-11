@@ -1,5 +1,7 @@
 # 713.rip
 
+**当前版本 v1.1.0**（2026-10-11）· [改动记录](CHANGELOG.md) · [版本发布](https://github.com/thousandsson/713.rip/releases)
+
 > 你的周末不属于学校
 
 「713」是一周 **7** 天、平均每天 **13** 小时在校；「rip」是墓碑。
@@ -21,10 +23,21 @@
 ```
 index.html     页面本体（结构 + 渲染逻辑）
 style.css      样式
-data.js        学校名单数据（日常只需要改这个）
+data.js        学校名单数据 + 站点版本号（日常只需要改这个）
+CHANGELOG.md   改动记录
 evidence/      证据图片放这里（自己新建这个文件夹）
 .nojekyll      可选。告诉 GitHub Pages 不要用 Jekyll 处理
 ```
+
+## 版本
+
+页脚显示的版本号来自 `data.js` 里的 `SITE_VERSION`，只有这一个来源。改版本时三处一起动：
+
+1. `data.js` 的 `SITE_VERSION`
+2. `CHANGELOG.md` 加一条
+3. GitHub 仓库 → `Releases` → `Draft a new release`，tag 用同名（如 `v1.1.0`），标题写一句话
+
+版本规则：`v主.次.修订` —— 主＝页面结构或定位大改，次＝加内容/改版式/改交互，修订＝改错字、改链接、改数据。
 
 ## 本地预览
 
