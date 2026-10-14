@@ -1,6 +1,6 @@
 # 713.rip
 
-**当前版本 v1.1.0**（2026-10-11）· [改动记录](CHANGELOG.md) · [版本发布](https://github.com/thousandsson/713.rip/releases)
+**当前版本 v1.2.0**（2026-10-15）· [改动记录](CHANGELOG.md) · [版本发布](https://github.com/thousandsson/713.rip/releases)
 
 > 你的周末不属于学校
 
