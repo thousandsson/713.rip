@@ -32,7 +32,7 @@
 
 /* 站点版本：页脚显示的就是这个值。
    改版本时三处一起动：本行、CHANGELOG.md、GitHub 上的 Release 标签。 */
-window.SITE_VERSION = "v1.1.1";
+window.SITE_VERSION = "v1.2.0";
 
 window.SCHOOLS = [
 
@@ -51,6 +51,7 @@ window.SCHOOLS = [
       ["高三 晚自习结束", "22:30"]
     ],
     violations: [
+      { name: "四川省教育厅《四川省基础教育学校规范管理二十条措施》", link: "#law-sc" },
       { name: "《学校卫生工作条例》第五条", link: "#law-health" },
       { name: "教育部办公厅教基厅函〔2021〕11 号", link: "#law-sleep" },
       { name: "南充市《关于严格落实中小学生作息时间要求的通知》", link: "#law-nc-time" },
@@ -84,6 +85,7 @@ window.SCHOOLS = [
       ["平均每天在校", "12 小时 49 分"]
     ],
     violations: [
+      { name: "四川省教育厅《四川省基础教育学校规范管理二十条措施》", link: "#law-sc" },
       { name: "《学校卫生工作条例》第五条", link: "#law-health" },
       { name: "教育部办公厅教基厅函〔2021〕11 号", link: "#law-sleep" },
       { name: "南充市《关于严格落实中小学生作息时间要求的通知》", link: "#law-nc-time" },
